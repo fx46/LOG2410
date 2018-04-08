@@ -1,0 +1,10 @@
+Tests du VISITEUR BoundingBoxCalculator
+=========================
+
+Boite englobante de l'objet:
+	xmin = 0
+	xmax = 2
+	ymin = 0
+	ymax = 2
+	zmin = 0
+	zmax = 2
