@@ -9,6 +9,10 @@ void TransformVisitor::visit(Objet3DComposite & obj)
 	//    - Pousser la transformation sur la pile des transformations
 	//    - Iterer sur les enfants et visiter chaque enfant
 	//    - Eliminer la transformation poussee sur la pile
+	TransformStack::push(obj);
+	for (auto it = obj.begin(); it != obj.end(); it++) {
+		it->accueillir(*this);
+	}
 }
 
 void TransformVisitor::visit(Objet3DTransform & obj)
